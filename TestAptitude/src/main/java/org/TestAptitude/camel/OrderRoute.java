@@ -2,10 +2,9 @@ package org.TestAptitude.camel;
 
 import org.TestAptitude.entityInput.ClientOrder;
 import org.TestAptitude.entityOutput.Order;
-import org.TestAptitude.Service.OrderMapperService;
+import org.TestAptitude.service.OrderMapperService;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.model.dataformat.JsonLibrary;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -13,7 +12,7 @@ public class OrderRoute extends RouteBuilder {
 
     private final OrderMapperService orderMapperService;
 
-    @Autowired
+
     public OrderRoute(OrderMapperService orderMapperService) {
         this.orderMapperService = orderMapperService;
     }

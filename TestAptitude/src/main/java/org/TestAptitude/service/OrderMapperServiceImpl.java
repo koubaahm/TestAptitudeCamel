@@ -1,4 +1,4 @@
-package org.TestAptitude.Service;
+package org.TestAptitude.service;
 
 import org.TestAptitude.entityInput.ClientOrder;
 import org.TestAptitude.entityInput.Ligne;
